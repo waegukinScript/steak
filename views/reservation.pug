@@ -1,0 +1,191 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title Steak — Free Restaurant Website Template by Colorlib
+    link(rel='stylesheet', href='css/style.css')
+  body
+    #site-wrap.js-animsition.animsition(data-animsition-in-class='fade-in', data-animsition-out-class='fade-out')
+      nav.templateux-menu
+        .templateux-menu-inner
+          ul
+            li
+              a.animsition-link(href='index.html') Home
+            li
+              a(href='about.html') About
+            li
+              a.animsition-link(href='menu.html') Menu
+            li
+              a.animsition-link(href='gallery.html') Gallery
+            li
+              a.animsition-link(href='contact.html') Contact
+            li.cta.active
+              a.animsition-link.py-2.px-4(href='reservation.html') Reserve Now
+      header.templateux-header
+        .container-fluid
+          .row
+            .col-6.templateux-logo
+              h1
+                a.animsition-link(href='index.html') Steak
+            .col-6.text-right
+              button.d-block.hamburger.hamburger--spin.templateux-toggle.templateux-toggle-light.ml-auto.templateux-toggle-menu(data-toggle='collapse', data-target='#mobile-menu', aria-controls='mobile-menu', aria-expanded='false', aria-label='Toggle navigation')
+                span.hamburger-box
+                  span.hamburger-inner
+              // .templateux-toggle
+      .cover-parallax-1.overlay-1.padding(data-scrollax-parent='true')
+        .cover(data-scrollax="properties: { translateY: '30%' }")
+          img(src='images/img_isotope_8.jpg')
+        .container
+          .row.align-items-center
+            .col-md-12.col-lg-12.text-center(data-aos='fade')
+              h3.heading.mb-5 Reservation
+        a.templateux-mouse.js-smoothscroll(href='#next-section')
+          .scroll
+      // .cover-parallax-1
+      #next-section.templateux-section
+        .container
+          .row.mb-5.justify-content-center(data-aos='fade')
+            .col-md-12.text-center.mb-5
+              h2.display-4.mb-4 Reserve A Table
+              .row.justify-content-center
+                .col-md-7
+                  p.lead
+                    | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          .row
+            .col-md-12
+              .block-open-time-reserve(data-aos='fade')
+                .open-time.text-center
+                  h2.text-white Time Open
+                  p.text-muted-alpha.mb-0.text-uppercase Monday — Friday
+                  p
+                    | 7AM to 11AM (Breakfast) 
+                    br
+                    |                 12PM to 11PM (Lunc/Dinner) 
+                    br
+                  p.text-muted-alpha.mb-3.text-uppercase Saturday (CLOSED) 
+                  p.text-muted-alpha.mb-0.text-uppercase Sunday
+                  p
+                    | 7AM to 11AM (Breakfast) 
+                    br
+                    |                 12PM to 11PM (Lunc/Dinner) 
+                    br
+                  p
+                    a.link-primary(href='tel://+13982398483') +1 398 239 8483
+                .reserve
+                  form(action='#')
+                    .row
+                      .col-md-12.text-center
+                        h2.mb-4 Reservation Form
+                    .row
+                      .form-group.col-md-4
+                        .input-with-icon-wrap
+                          span.icon.ion-chevron-down
+                          select.form-control.border-bottom(name='', id='')
+                            option(value='') 1 Person
+                            option(value='') 2 Persons
+                            option(value='') 3 Persons
+                            option(value='') 4 Persons
+                            option(value='') 5+ Persons
+                      .form-group.col-md-4
+                        .input-with-icon-wrap
+                          span.icon.ion-calendar
+                          input.form-control.border-bottom.js-datepicker(type='text', placeholder='Date')
+                      .form-group.col-md-4
+                        .input-with-icon-wrap
+                          span.icon.ion-android-time
+                          input.form-control.border-bottom.js-timepicker(type='text', placeholder='Time')
+                    .row.mb-5
+                      .form-group.col-md-4
+                        input.form-control.border-bottom(type='text', placeholder='Name')
+                      .form-group.col-md-4
+                        input.form-control.border-bottom(type='text', placeholder='Phone')
+                      .form-group.col-md-4
+                        input.form-control.border-bottom(type='email', placeholder='Email')
+                    .row.justify-content-center
+                      .col-md-4
+                        input.btn.btn-black.btn-block.py-3.px-4(type='submit', value='Reserve Now')
+      #map.block-map-1
+      footer.templateux-footer
+        .container
+          .row.mb-5
+            .col-md-4.pr-md-5.mb-4
+              .block-footer-widget
+                h3 About Steak Restaurant
+                p
+                  | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                p
+                  a.btn.btn-black.btn-outline-black.py-2.px-4(href='#') About Us
+            .col-md-8
+              .row
+                .col-md-3.mb-4
+                  .block-footer-widget
+                    h3 Quick Links
+                    ul.list-unstyled
+                      li
+                        a(href='#') Home
+                      li
+                        a(href='#') Menu
+                      li
+                        a(href='#') Gallery
+                      li
+                        a(href='#') Reservation
+                .col-md-3.mb-4
+                  .block-footer-widget
+                    h3 Support
+                    ul.list-unstyled
+                      li
+                        a(href='#') FAQ
+                      li
+                        a(href='#') Contact Us
+                      li
+                        a(href='#') Call Us
+                .col-md-3.mb-4
+                  .block-footer-widget
+                    h3 About Us
+                    ul.list-unstyled
+                      li
+                        a(href='#') About Us
+                      li
+                        a(href='#') Careers
+                      li
+                        a(href='#') Terms of Service
+                      li
+                        a(href='#') Privacy Policy
+                .col-md-3.mb-4
+                  .block-footer-widget
+                    h3 Connect With Us
+                    ul.list-unstyled.block-social
+                      li
+                        a.p-1(href='#')
+                          span.icon-facebook-square
+                      li
+                        a.p-1(href='#')
+                          span.icon-twitter
+                      li
+                        a.p-1(href='#')
+                          span.icon-instagram
+                      li
+                        a.p-1(href='#')
+                          span.icon-youtube-play
+              // .row
+              // .row
+              .row.pt-5.text-left
+                .col-md-12.text-center
+                  p
+                    // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                    | Copyright ©
+                    script.
+                      document.write(new Date().getFullYear());
+                    |  All rights reserved | This template is made with 
+                    i.icon-heart(aria-hidden='true')
+                    |  by 
+                    a.text-primary(href='https://colorlib.com', target='_blank') Colorlib
+                    // Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                    // .row
+                    // .templateux-footer
+                    // .js-animsition
+                    script(src='js/scripts-all.js')
+                    script(src='js/main.js')
+                    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+                    script(src='js/google-map.js')
