@@ -7,11 +7,12 @@ exports.postEvent = (req, res, next) => {
   console.log('Events');
   console.log(obj);
   const event = new Event({
-    bookName: obj.bookName,
-    emailAddress: obj.emailAddress,
+    bookName: obj.name,
+    emailAddress: obj.email,
     phoneNumber: obj.phoneNumber,
-    eventDate: obj.eventDate,
-    selectPeople: obj.selectPeople,
+    eventDate: obj.date,
+    eventTime:obj.time,
+    selectPeople: obj.persons,
   });
   event.save((err) => {
     if (err) {
@@ -57,6 +58,7 @@ exports.postUpdateEvent = (req, res, next) => {
     event.emailAddress = obj.emailAddress,
     event.phoneNumber = obj.phoneNumber,
     event.eventDate = obj.eventDate,
+    event.eventTime = obj.eventTime,
     event.selectPeople = obj.selectPeople,
       event.save((err) => {
         if (err) {
@@ -111,6 +113,10 @@ exports.postGetReportEvent = (req, res, next) => {
                           <td class="heading">Event Date</td>
                           <td class="value">${event.eventDate}</td>
                         </tr>
+                        <tr>
+                        <td class="heading">Event Time</td>
+                        <td class="value">${event.eventTime}</td>
+                      </tr>
                         <tr>
                           <td class="heading">Selected People</td>
                           <td class="value">${event.selectPeople}</td>
@@ -262,6 +268,10 @@ exports.postEmailEvent = (req, res, next) => {
                       <tr>
                         <td class="heading">Event Date</td>
                         <td class="value">${event.eventDate}</td>
+                      </tr>
+                      <tr>
+                        <td class="heading">Event Time</td>
+                        <td class="value">${event.eventTime}</td>
                       </tr>
                       <tr>
                         <td class="heading">Selected People</td>

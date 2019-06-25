@@ -5,6 +5,7 @@ const eventSchema = new mongoose.Schema({
   emailAddress: String,
   phoneNumber: String,
   eventDate: Date,
+  eventTime: String,
   selectPeople: String,
   createdAt: String
 }, { timestamps: true });

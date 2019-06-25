@@ -42,7 +42,7 @@ const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
 const contactDatabaseController = require('./controllers/contactDatabase');
 
-
+const reservationController = require('./controllers/reservation');
 const eventController = require('./controllers/event');
 const elementsController = require('./controllers/elements');
 const blogController = require('./controllers/blog');
@@ -243,7 +243,7 @@ app.get('/account/unlink/:provider',
   passportConfig.isAuthenticated,
   userController.getOauthUnlink);
 
-
+  app.get('/reservation', reservationController.reservation);
 /**
  * API examples routes.
  */

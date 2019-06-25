@@ -1,25 +1,27 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    title Steak — Free Restaurant Website Template by Colorlib
-    link(rel='stylesheet', href='css/style.css')
-  body
-    #site-wrap.js-animsition.animsition(data-animsition-in-class='fade-in', data-animsition-out-class='fade-out')
-      nav.templateux-menu
-        .templateux-menu-inner
-          ul
-            li.active
-              a.animsition-link(href='/') Home
-            li
-              a(href='/about') About
-            li
-              a.animsition-link(href='/menu') Menu
-            li
-              a.animsition-link(href='/gallery') Gallery
-            li
-              a.animsition-link(href='/contact') Contact
-            li.cta
-              a.animsition-link.py-2.px-4(href='/reservation') Reserve Now
-      header.templateux-header
+
+nav.templateux-menu
+  .templateux-menu-inner
+    ul
+      li.active
+        a.animsition-link(href='/') Home
+      li
+        a(href='/about') About
+      li
+        a.animsition-link(href='/menu') Menu
+      li
+        a.animsition-link(href='/gallery') Gallery
+      li
+        a.animsition-link(href='/contact') Contact
+      li.cta
+        a.animsition-link.py-2.px-4(href='/reservation') Reserve Now
+header.templateux-header
+  .container-fluid
+      .row
+        .col-6.templateux-logo
+          h1
+            a.animsition-link(href='/') Steak
+        .col-6.text-right
+          button.d-block.hamburger.hamburger--spin.templateux-toggle.templateux-toggle-light.ml-auto.templateux-toggle-menu(data-toggle='collapse', data-target='#mobile-menu', aria-controls='mobile-menu', aria-expanded='false', aria-label='Toggle navigation')
+            span.hamburger-box
+              span.hamburger-inner
+          // .templateux-toggle
